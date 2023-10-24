@@ -19,9 +19,9 @@ import Parse from 'parse'
 import { initializeParse } from '@parse/react'
 
 initializeParse(
-  'https://pt3.b4a.io/', // e.g. YOUR_APP_NAME.b4a.io
-  'EjOopvf32TxOBNafKLhHC50tvp6AGPms9b3QGNV2',
-  'jtFWiFHOxNmb8zujKIFJtwj0UgZTLeRofqj8WCza',
+  'http://139.84.133.61:1337/parse', // e.g. YOUR_APP_NAME.b4a.io
+  'JOOSAPPS',
+  'K9S3H8I7T0IG6A5R4B2H1A$313#414',
 )
 // middlewared
 const history = createHashHistory()

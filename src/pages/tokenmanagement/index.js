@@ -1,16 +1,13 @@
 // eslint-disable
 
 import React, { useState, useEffect } from 'react'
-import { Input, Slider, Form, Table, Select, Tag, notification } from 'antd'
+import { Input, Form, Table, Select } from 'antd'
 import { Helmet } from 'react-helmet'
-import HeadersHeading from '@vb/widgets/Headers/Heading'
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Badge } from 'reactstrap'
-import TokenService from 'services/TokenService'
-import LoadingOverlay from 'react-loading-overlay'
+import { Button, Modal, ModalHeader, ModalBody, Badge } from 'reactstrap'
 import axios from 'axios'
 import style from '../license/info/style.module.scss'
 import Parse from 'parse'
-import { initializeParse, useParseQuery } from '@parse/react'
+import { useParseQuery } from '@parse/react'
 
 const Tokenmanagement = () => {
   const [modalCentered, setModalCentered] = useState(false)
