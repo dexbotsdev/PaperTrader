@@ -2,6 +2,9 @@ import React from 'react'
 import { Menu, Dropdown, Tabs } from 'antd'
 
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const { TabPane } = Tabs
 

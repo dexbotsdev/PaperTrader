@@ -6,6 +6,9 @@ import { Dropdown, Input, Tooltip, message } from 'antd'
 import PerfectScrollbar from 'react-perfect-scrollbar'
 import store from 'store'
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const mapStateToProps = ({ menu }) => ({
   menuData: menu.menuData,

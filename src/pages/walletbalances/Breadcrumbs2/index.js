@@ -3,6 +3,9 @@ import { Link, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { reduce } from 'lodash'
 import styles from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const mapStateToProps = ({ menu }) => ({
   menuData: menu.menuData,

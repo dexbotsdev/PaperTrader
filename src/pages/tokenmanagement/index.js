@@ -8,6 +8,9 @@ import axios from 'axios'
 import style from '../license/info/style.module.scss'
 import Parse from 'parse'
 import { useParseQuery } from '@parse/react'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const Tokenmanagement = () => {
   const [modalCentered, setModalCentered] = useState(false)
@@ -328,7 +331,9 @@ const Tokenmanagement = () => {
 
   const getPairsF = async () => {
     const trades = []
-
+      const query = new Parse.Query(MyTrades)
+      const queryresults = await query.findAll()
+      const results = queryresults;
     if (results)
       for (let i = 0; i < results.length; i++) {
         const pairConfig = results[i]
@@ -374,8 +379,9 @@ const Tokenmanagement = () => {
     pairConfig.set('fdv', fdv)
     pairConfig.set('investedAmount', parseFloat(formData.investedAmount))
     // save it on Back4App Data Store
-    await pairConfig.save().then((created) => {
+    await pairConfig.save().then(async (created) => {
       console.log(created.id)
+       await getPairsF();
     })
     toggleCentered()
   }

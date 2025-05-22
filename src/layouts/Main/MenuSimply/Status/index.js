@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { FormattedMessage } from 'react-intl'
 import SysService from 'services/SysService'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const Status = () => {
   const [status, setStatus] = useState()

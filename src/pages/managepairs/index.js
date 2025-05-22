@@ -13,12 +13,16 @@ import { Link, withRouter } from 'react-router-dom'
 import style from './6/style.module.scss'
 import Parse from 'parse'
 import { initializeParse } from '@parse/react'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 initializeParse(
-  'http://139.84.133.61:1337/parse', // e.g. YOUR_APP_NAME.b4a.io
-  'JOOSAPPS',
-  'K9S3H8I7T0IG6A5R4B2H1A$313#414',
+  'https://parseapi.back4app.com', // e.g. YOUR_APP_NAME.b4a.io
+  'sJuSdRgoSPIX5ygKkAO2hvQzhYBtQx5iRExX3asa',
+  'rbnDkaoL25gKEo0OTLPmKmJ6quOnUJbYlbv1YXSi',
 )
+
 const { Search, TextArea } = Input
 const formItemLayout = {
   labelCol: {
@@ -257,7 +261,7 @@ const SearchAndAddPairs = () => {
         const pairsmap = []
 
         response.data.pairs.forEach((pairItem) => {
-          if (pairItem.dexId === 'uniswap') pairsmap.push(pairItem)
+          if (pairItem.dexId === 'raydium' || pairItem.dexId === 'meteora' || pairItem.dexId === 'pumpfun' || pairItem.dexId === 'pumpswap') pairsmap.push(pairItem)
         })
         setPairsMap(pairsmap)
         setIsActive(false)

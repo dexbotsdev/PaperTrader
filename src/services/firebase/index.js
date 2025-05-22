@@ -2,6 +2,9 @@ import firebase from 'firebase/app'
 import { notification } from 'antd'
 import 'firebase/auth'
 import 'firebase/database'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const firebaseConfig = {
   apiKey: 'AIzaSyBJVhr2WZshEGR7egcxoygQIphKOkKVIYQ',

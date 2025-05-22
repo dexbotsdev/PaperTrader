@@ -5,6 +5,9 @@ import { Button, Modal, ModalHeader, ModalBody, Badge } from 'reactstrap'
 import WalletService from 'services/WalletService'
 import Breadcrumbs2 from './Breadcrumbs2'
 import HeadersHeading2 from '@vb/widgets/Headers/Heading2'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const WalletBalances = () => {
   const [wallets, setWallets] = useState([])

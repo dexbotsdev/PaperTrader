@@ -3,6 +3,9 @@ import { injectIntl } from 'react-intl'
 import { SearchOutlined } from '@ant-design/icons'
 import { Input, Checkbox } from 'antd'
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 let searchInput = null
 

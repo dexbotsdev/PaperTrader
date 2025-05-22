@@ -1,6 +1,9 @@
 import React from 'react'
 import { Table } from 'antd'
 import defaultData from './data.json'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const columns = [
   {

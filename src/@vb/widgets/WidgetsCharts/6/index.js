@@ -3,6 +3,9 @@ import ChartistGraph from 'react-chartist'
 import ChartistTooltip from 'chartist-plugin-tooltips-updated'
 import data from './data.json'
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const options = {
   low: 0,

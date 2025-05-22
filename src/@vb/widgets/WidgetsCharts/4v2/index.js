@@ -2,6 +2,9 @@ import React from 'react'
 import ChartistGraph from 'react-chartist'
 import ChartistTooltip from 'chartist-plugin-tooltips-updated'
 import data from './data.json'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const options = {
   chartPadding: {

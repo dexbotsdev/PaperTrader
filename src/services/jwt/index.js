@@ -1,5 +1,8 @@
 import apiClient from 'services/axios'
 import store from 'store'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export async function login(email, password) {
   return apiClient

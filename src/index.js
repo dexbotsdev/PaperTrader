@@ -17,11 +17,14 @@ import * as serviceWorker from './serviceWorker'
 import 'services/axios/fakeApi'
 import Parse from 'parse'
 import { initializeParse } from '@parse/react'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 initializeParse(
-  'http://139.84.133.61:1337/parse', // e.g. YOUR_APP_NAME.b4a.io
-  'JOOSAPPS',
-  'K9S3H8I7T0IG6A5R4B2H1A$313#414',
+  'https://parseapi.back4app.com', // e.g. YOUR_APP_NAME.b4a.io
+  'sJuSdRgoSPIX5ygKkAO2hvQzhYBtQx5iRExX3asa',
+  'rbnDkaoL25gKEo0OTLPmKmJ6quOnUJbYlbv1YXSi',
 )
 // middlewared
 const history = createHashHistory()

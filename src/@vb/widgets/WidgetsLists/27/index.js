@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import SortableTree from 'react-sortable-tree'
 import { Checkbox } from 'antd'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const List27 = () => {
   const completedDefault = [

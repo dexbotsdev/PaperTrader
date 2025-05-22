@@ -1,6 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Error404 from '@vb/components/Errors/404'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const System404 = () => {
   return (

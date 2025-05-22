@@ -16,6 +16,9 @@ import RealizedProfits from './RealizedProfits'
 import AppPartialsDoHead from '@vb/widgets/AppPartials/DoHead'
 import General22 from '@vb/widgets/WidgetsGeneral/22'
 import styles from '../dashboard/Breadcrumbs2/style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 function roundTime(ts) {
   const time = new Date(ts * 1000)
@@ -27,7 +30,7 @@ function roundTime(ts) {
 }
 
 const Dashboard = () => {
-  const [network, setNetwork] = useState('bsc')
+  const [network, setNetwork] = useState('solana')
   const [grids, setGrids] = useState()
   const [openOrders, setOpenOrders] = useState()
   const [form] = Form.useForm()

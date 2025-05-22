@@ -9,6 +9,9 @@ import Actions from './Actions'
 import UserMenu from './UserMenu'
 import style from './style.module.scss'
 import Status from '../MenuSimply/Status'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const mapStateToProps = ({ settings }) => ({
   isSidebarOpen: settings.isSidebarOpen,

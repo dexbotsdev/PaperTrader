@@ -5,6 +5,9 @@ import { UserOutlined } from '@ant-design/icons'
 import { Menu, Dropdown, Avatar, Button } from 'antd'
 import styles from './style.module.scss'
 import { Link } from 'react-router-dom'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const mapStateToProps = ({ user, settings: { menuColor } }) => ({ user, menuColor })
 

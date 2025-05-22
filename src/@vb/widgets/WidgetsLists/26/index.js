@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import SortableTree, { changeNodeAtPath } from 'react-sortable-tree'
 import { Checkbox } from 'antd'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const List26 = () => {
   const treeDataDefault = [

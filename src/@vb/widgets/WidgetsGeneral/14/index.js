@@ -1,6 +1,9 @@
 import React from 'react'
 import PerfectScrollbar from 'react-perfect-scrollbar'
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const General14 = () => {
   return (

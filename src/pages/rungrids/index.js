@@ -7,6 +7,9 @@ import { Button, Badge } from 'reactstrap'
 import styles from '../dashboard/Breadcrumbs2/style.module.scss'
 import Status from 'layouts/Main/MenuSimply/Status'
 import BigNumber from 'bignumber.js'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 BigNumber.config({ DECIMAL_PLACES: 6 })
 

@@ -7,6 +7,9 @@ import { Helmet } from 'react-helmet'
 import PublicLayout from './Public'
 import AuthLayout from './Auth'
 import MainLayout from './Main'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const Layouts = {
   public: PublicLayout,

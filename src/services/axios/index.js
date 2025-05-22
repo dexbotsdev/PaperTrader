@@ -1,6 +1,9 @@
 import axios from 'axios'
 import store from 'store'
 import { notification } from 'antd'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const apiClient = axios.create({
   baseURL: '/api',

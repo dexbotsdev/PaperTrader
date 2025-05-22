@@ -1,5 +1,8 @@
 import React from 'react'
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const List6 = () => {
   return (

@@ -1,4 +1,7 @@
 import React from 'react'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const General21v2 = () => {
   return (

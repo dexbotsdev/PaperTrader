@@ -1,5 +1,8 @@
 import jwt from 'jsonwebtoken'
 import mock from '../mock'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const users = [
   {

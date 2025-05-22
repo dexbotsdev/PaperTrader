@@ -11,6 +11,9 @@ import { useHistory } from 'react-router-dom'
 import CheckableTag from 'antd/lib/tag/CheckableTag'
 import LoadingOverlay from 'react-loading-overlay'
 import Status from 'layouts/Main/MenuSimply/Status'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const AddGrid = () => {
   const [form] = Form.useForm()

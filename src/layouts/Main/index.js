@@ -18,6 +18,9 @@ import Sidebar from '@vb/components/Sidebar'
 import SupportChat from '@vb/components/SupportChat'
 import Variants from '@vb/components/Variants'
 import Tutorial from '@vb/components/Tutorial'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const mapStateToProps = ({ settings }) => ({
   isMobileMenuOpen: settings.isMobileMenuOpen,

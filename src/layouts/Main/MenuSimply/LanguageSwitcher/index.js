@@ -7,6 +7,9 @@ import FlagEn from './flags/en.svg'
 import FlagRu from './flags/ru.svg'
 import FlagFr from './flags/fr.svg'
 import FlagZh from './flags/zh.svg'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const mapStateToProps = ({ settings }) => ({
   locale: settings.locale,

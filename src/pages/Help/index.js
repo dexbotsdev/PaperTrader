@@ -2,6 +2,9 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import HeadersCardHeader3 from '@vb/widgets/Headers/CardHeader3'
 import Steps from './Steps'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const ReadMeFirst = () => {
   return (

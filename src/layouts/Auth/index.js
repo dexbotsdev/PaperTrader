@@ -5,6 +5,9 @@ import { Link, withRouter } from 'react-router-dom'
 import classNames from 'classnames'
 import Sidebar from '@vb/components/Sidebar' 
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const mapStateToProps = ({ settings }) => ({
   logo: settings.logo,

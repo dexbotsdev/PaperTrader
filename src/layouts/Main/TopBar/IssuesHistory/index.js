@@ -3,6 +3,9 @@ import { FormattedMessage } from 'react-intl'
 import { Menu, Dropdown } from 'antd'
 import { Link } from 'react-router-dom'
 import styles from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const IssuesHistory = () => {
   const menu = (

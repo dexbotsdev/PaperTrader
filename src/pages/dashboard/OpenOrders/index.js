@@ -1,6 +1,9 @@
 import React, { useState,useEffect } from 'react'
 import { Alert, Table, Spin } from 'antd'
 import  getScanLink  from 'utils/getScanLink'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const myOrdersColumns = [
   {

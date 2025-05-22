@@ -3,6 +3,9 @@ import { Input } from 'antd'
 import { SearchOutlined } from '@ant-design/icons'
 import items from './data.json'
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const List24 = () => {
   const [activeIndex, setActiveIndex] = useState(0)

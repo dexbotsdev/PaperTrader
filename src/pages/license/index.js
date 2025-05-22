@@ -4,6 +4,9 @@ import { Input, Select, Table, Form, notification } from 'antd'
 import { Button } from 'reactstrap'
 import LicenseInfo from './info'
 import SysService from 'services/SysService'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const { Option } = Select
 

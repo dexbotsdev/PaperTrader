@@ -1,6 +1,9 @@
 import React from 'react'
 import style from './style.module.scss'
 import defaultData from './data.json'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const List4 = ({ data = defaultData }) => {
   return (

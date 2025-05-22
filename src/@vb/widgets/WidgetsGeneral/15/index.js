@@ -1,5 +1,8 @@
 import React from 'react'
 import { Menu, Dropdown } from 'antd'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const dropdownMenu = (
   <Menu>

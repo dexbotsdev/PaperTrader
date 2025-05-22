@@ -3,6 +3,9 @@ import { Input, Slider, Form, Table, Select, Tag, Switch, notification } from 'a
 import { Helmet } from 'react-helmet'
 import { Button, Modal, ModalHeader, ModalBody, Badge } from 'reactstrap'
 import WalletService from 'services/WalletService'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const WalletManagement = () => {
   const [modalCentered, setModalCentered] = useState(false)

@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { Dropdown, Badge } from 'antd'
 import General26 from '@vb/widgets/WidgetsGeneral/26'
 import styles from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const Actions = () => {
   const [count, setCount] = useState(2)

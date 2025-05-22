@@ -1,6 +1,9 @@
 import React from 'react'
 import { Menu, Dropdown } from 'antd'
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const dropdownMenu = (
   <Menu>

@@ -1,6 +1,9 @@
 import React from 'react'
 import style from './style.module.scss'
 import dots from './img/3-rounds.png'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const List9 = () => {
   return (

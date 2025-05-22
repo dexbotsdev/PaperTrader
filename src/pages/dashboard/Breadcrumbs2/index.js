@@ -4,6 +4,9 @@ import { connect } from 'react-redux'
 import { reduce } from 'lodash'
 import styles from './style.module.scss'
 import Status from 'layouts/Main/MenuSimply/Status'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const mapStateToProps = ({ menu }) => ({
   menuData: menu.menuData,

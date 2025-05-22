@@ -8,6 +8,9 @@ import Actions from './Actions'
 import UserMenu from './UserMenu'
 import Cart from './Cart'
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const mapStateToProps = ({ settings }) => ({ settings })
 

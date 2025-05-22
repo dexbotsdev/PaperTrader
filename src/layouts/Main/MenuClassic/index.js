@@ -4,6 +4,9 @@ import { connect } from 'react-redux'
 import MenuLeft from './MenuLeft'
 import MenuTop from './MenuTop'
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const mapStateToProps = ({ settings }) => ({
   menuLayoutType: settings.menuLayoutType,

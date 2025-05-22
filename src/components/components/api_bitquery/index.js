@@ -1,5 +1,8 @@
 import axios from 'axios'
 import * as Bitquery from './bitquery'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const lastBarsCache = new Map()
 const supportedResolutions = ['1', '3', '5', '15', '30', '60', '120', '240', 'D']

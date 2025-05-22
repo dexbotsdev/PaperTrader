@@ -4,6 +4,9 @@ import classNames from 'classnames'
 import { Menu, Dropdown } from 'antd'
 import { Link } from 'react-router-dom'
 import styles from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const mapStateToProps = ({ menu, settings: { menuColor } }) => ({
   menuData: menu.menuData,

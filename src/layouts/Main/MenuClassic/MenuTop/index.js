@@ -6,6 +6,9 @@ import classNames from 'classnames'
 import store from 'store'
 import { find } from 'lodash'
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const mapStateToProps = ({ menu, settings, user }) => ({
   menuData: menu.menuData,

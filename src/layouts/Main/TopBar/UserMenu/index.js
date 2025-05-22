@@ -4,6 +4,9 @@ import { connect } from 'react-redux'
 import { UserOutlined } from '@ant-design/icons'
 import { Menu, Dropdown, Avatar } from 'antd'
 import styles from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const mapStateToProps = ({ user }) => ({ user })
 

@@ -1,6 +1,9 @@
 import React from 'react'
 import { Carousel } from 'antd'
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const General20v1 = () => {
   return (

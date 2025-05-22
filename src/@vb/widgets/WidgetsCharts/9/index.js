@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Doughnut } from 'react-chartjs-2'
 import data from './data.json'
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const Chart9 = () => {
   const tooltip = React.createRef()

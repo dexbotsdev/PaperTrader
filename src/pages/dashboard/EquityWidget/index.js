@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const TotalEquityWidget = ({ totalEquity }) => {
   const [equity, setEquity] = useState(totalEquity)

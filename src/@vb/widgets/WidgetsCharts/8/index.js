@@ -4,6 +4,9 @@ import ChartistTooltip from 'chartist-plugin-tooltips-updated'
 import { Table } from 'antd'
 import data from './data.json'
 import style from './style.module.scss'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const columns = [
   {

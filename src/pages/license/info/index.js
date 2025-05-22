@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import style from './style.module.scss'
 import SysService from 'services/SysService'
 import Status from 'layouts/Main/MenuSimply/Status'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const LicenseInfo = () => {
   const [license, setLicense] = useState()
